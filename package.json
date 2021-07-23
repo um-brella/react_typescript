@@ -1,0 +1,74 @@
+{
+  "name": "react_typescript",
+  "version": "1.0.0",
+  "description": "react+ts",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack",
+    "lint": "eslint src --ext .tsx",
+    "lint:fix": "eslint src --ext .tsx --fix",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/um-brella/react_typescript.git"
+  },
+  "keywords": [
+    "typescript",
+    "react"
+  ],
+  "husky": {
+    "hooks": {
+      "commit-msg": "validate-commit-msg"
+    }
+  },
+  "author": "qizhi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/um-brella/react_typescript/issues"
+  },
+  "homepage": "https://github.com/um-brella/react_typescript#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "commitizen": "^4.2.4",
+    "conventional-changelog-cli": "^2.1.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.31.0",
+    "eslint-plugin-html": "^6.1.2",
+    "hoist-non-react-statics": "^3.3.2",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "source-map-loader": "^3.0.0",
+    "ts-jest": "^27.0.4",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
+    "validate-commit-msg": "^2.14.0",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-redux": "^7.1.18",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/redux-logger": "^3.0.9",
+    "connected-react-router": "^6.9.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  }
+}
